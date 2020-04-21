@@ -1,0 +1,40 @@
+POST  http://localhost:4000/api/register
+Content-Type: application/json
+
+{
+    "name": "Janaki",
+    "email": "janaki@gmail.com",
+    "password": "janaki"
+}
+
+###
+
+//GET http://localhost:4000/api/register
+
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "janaki@gmail.com",
+    "password": "janaki"
+}
+
+###
+
+GET http://localhost:4000/api/profile
+access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphbmFraUBnbWFpbC5jb20iLCJpYXQiOjE1ODc0Mzk2ODgsImV4cCI6MTU4NzQzOTc0OH0.7piqxNkq8YjZwmmOuBO0B1Y42l_k3c9OqwP9qldMprE
+
+
+###
+POST http://localhost:3000/api/newToken
+refresh-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphbmFraUBnbWFpbC5jb20iLCJpYXQiOjE1ODc0MDU3NDV9.eS0bha6LL1G6WWd3mJXTkOsGBmEUvmLg8Sd2ORxpOxQ
+
+###
+DELETE http://localhost:3000/api/logout
+refresh-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphbmFraUBnbWFpbC5jb20iLCJpYXQiOjE1ODc0MDU3NDV9.eS0bha6LL1G6WWd3mJXTkOsGBmEUvmLg8Sd2ORxpOxQ
+
+
+
+###
+GET https://node-auth.glitch.me/dreams
